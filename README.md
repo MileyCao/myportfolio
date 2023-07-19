@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Miley's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built with ReactJS, Tailwind CSS
 
 ## Available Scripts
 

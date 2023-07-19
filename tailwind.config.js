@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./src/**/*.{html,js,jsx,tsx}'],
   mode: 'jit',
   theme: {
     extend: {
@@ -10,7 +10,7 @@ module.exports = {
         grey: '#ededed',
         'dark-blue': '#022d5f',
         cream: '#fdfbec',
-        pink: 'f9a0a3',
+        pink: '#f9a0a3',
         'opaque-black': 'rgba(0,0,0,0.35)',
       },
       backgroundImage: (theme) => ({
