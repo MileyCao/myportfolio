@@ -5,20 +5,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        red: '#dc4492',
-        yellow: '#f0bc68',
+        red: '#C95D63',
+        yellow: '#fedc97',
         grey: '#ededed',
+        blue: '#0F52BA',
         'dark-blue': '#022d5f',
         cream: '#fdfbec',
-        pink: '#f9a0a3',
+        pink: '#C95D63',
+
         'opaque-black': 'rgba(0,0,0,0.35)',
       },
       backgroundImage: (theme) => ({
         'gradient-rainbow':
-          'linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)',
+          'linear-gradient(90deg, rgba(15,76,129,1) 0%, rgba(165,173,233,1) 35%, rgba(255,184,184,1) 100%)',
 
         'gradient-rainblue':
-          'linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)',
+          'linear-gradient(90deg, rgba(15,76,129,1) 0%, rgba(165,173,233,1) 35%, rgba(255,184,184,1) 100%)',
       }),
       fontFamily: {
         Montserrat: ['Montserrat', 'serif'],

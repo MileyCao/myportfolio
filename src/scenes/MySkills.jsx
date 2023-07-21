@@ -1,5 +1,7 @@
 import LineGradient from '../components/LineGradient';
 import useMediaQuery from '../hooks/useMediaQuery';
+import Skill from './Skill';
+import images from '../assets';
 import { motion } from 'framer-motion';
 
 const MySkills = () => {
@@ -19,7 +21,7 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="font-Montserrat font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
@@ -46,6 +48,17 @@ const MySkills = () => {
           )}
         </div>
       </div>
+      {/* Tech SKILLS */}
+      <div className="grid grid-cols-4 gap-5">
+        <Skill logoSrc={images.javascript} />
+        <Skill directionLeft={true} logoSrc={images.typescript} />
+        <Skill directionLeft={true} logoSrc={images.css3} />
+        <Skill directionLeft={true} logoSrc={images.html} />
+        <Skill logoSrc={images.reactIcon} />
+        <Skill directionLeft={true} logoSrc={images.nodejs} />
+        <Skill directionLeft={true} logoSrc={images.php} />
+        <Skill directionLeft={true} logoSrc={images.java} />
+      </div>
 
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32">
@@ -63,8 +76,8 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-Montserrat font-semibold text-5xl">01</p>
+              <p className="font-Montserrat font-semibold text-3xl mt-3">
                 Experience
               </p>
             </div>
@@ -91,8 +104,8 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-Montserrat font-semibold text-5xl">02</p>
+              <p className="font-Montserrat font-semibold text-3xl mt-3">
                 Innovative
               </p>
             </div>
@@ -119,8 +132,8 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-Montserrat font-semibold text-5xl">03</p>
+              <p className="font-Montserrat font-semibold text-3xl mt-3">
                 Imaginative
               </p>
             </div>
