@@ -50,14 +50,22 @@ const MySkills = () => {
       </div>
       {/* Tech SKILLS */}
       <div className="grid grid-cols-4 gap-5">
-        <Skill logoSrc={images.javascript} />
-        <Skill directionLeft={true} logoSrc={images.typescript} />
-        <Skill directionLeft={true} logoSrc={images.css3} />
-        <Skill directionLeft={true} logoSrc={images.html} />
-        <Skill logoSrc={images.reactIcon} />
-        <Skill directionLeft={true} logoSrc={images.nodejs} />
-        <Skill directionLeft={true} logoSrc={images.php} />
-        <Skill directionLeft={true} logoSrc={images.java} />
+        <Skill logoSrc={images.javascript} logoName={'JavaScript'} />
+        <Skill
+          directionLeft={true}
+          logoSrc={images.typescript}
+          logoName={'TypeScript'}
+        />
+        <Skill directionLeft={true} logoSrc={images.css3} logoName={'CSS3'} />
+        <Skill directionLeft={true} logoSrc={images.html} logoName={'HTML'} />
+        <Skill logoSrc={images.reactIcon} logoName={'React + React Native'} />
+        <Skill
+          directionLeft={true}
+          logoSrc={images.nodejs}
+          logoName={'NodeJS'}
+        />
+        <Skill directionLeft={true} logoSrc={images.php} logoName={'PHP'} />
+        <Skill directionLeft={true} logoSrc={images.java} logoName={'Java'} />
       </div>
 
       {/* SKILLS */}

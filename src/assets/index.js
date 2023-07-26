@@ -6,6 +6,8 @@ import javascript from './javascript.png';
 import nodejs from './nodejs.png';
 import java from './java.png';
 import php from './php.png';
+import mentumBranding from './mentumbranding.png';
+import mentumOrder from './mentumOrder.png';
 
 const images = {
   reactIcon,
@@ -16,5 +18,8 @@ const images = {
   nodejs,
   php,
   java,
+  mentumBranding,
+  mentumOrder,
 };
+
 export default images;
