@@ -2,6 +2,7 @@ import Navbar from './scenes/Navbar';
 import { useEffect, useState } from 'react';
 import DotGroup from './scenes/DotGroup';
 import Landing from './scenes/Landing';
+import WorkExperience from './scenes/WorkExperience';
 import MySkills from './scenes/MySkills';
 import Projects from './scenes/Projects';
 import LineGradient from './components/LineGradient';
@@ -26,7 +27,7 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <div className="app bg-cream">
+    <div className="app bg-cream scrollbar overflow-y-scroll scrollbar-track-gray-400/20 scrollbar-thumb-[#C95D63]/80">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -46,11 +47,22 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
+          onViewportEnter={() => setSelectedPage('work')}
+        >
+          <WorkExperience />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
           onViewportEnter={() => setSelectedPage('skills')}
         >
           <MySkills />
         </motion.div>
       </div>
+      {/** 
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <motion.div
@@ -60,7 +72,7 @@ function App() {
         >
           <Projects />
         </motion.div>
-      </div>
+      </div>*/}
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
