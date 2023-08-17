@@ -31,9 +31,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-Lora text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-Lora text-[16px] font-semibold">
             <Link
               page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Work"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -42,11 +47,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+            {/** 
             <Link
               page="Projects"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+            />*/}
 
             <Link
               page="Contact"
@@ -95,11 +101,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />*/}
-              <Link
-                page="Testimonials"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
+
               <Link
                 page="Contact"
                 selectedPage={selectedPage}

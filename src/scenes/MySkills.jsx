@@ -25,10 +25,11 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
+          {/** 
           <p className="mt-10 mb-7">
             Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
             fames odio in at.
-          </p>
+          </p>*/}
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -69,8 +70,9 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
+      {/**
       <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* EXPERIENCE */}
+        
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -84,7 +86,6 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-Montserrat font-semibold text-5xl">01</p>
               <p className="font-Montserrat font-semibold text-3xl mt-3">
                 Experience
               </p>
@@ -98,7 +99,7 @@ const MySkills = () => {
           </p>
         </motion.div>
 
-        {/* INNOVATIVE */}
+       
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -126,7 +127,7 @@ const MySkills = () => {
             faucibus a
           </p>
         </motion.div>
-        {/* IMAGINATIVE */}
+       
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -154,7 +155,7 @@ const MySkills = () => {
             Bibendum.
           </p>
         </motion.div>
-      </div>
+      </div>*/}
     </section>
   );
 };
