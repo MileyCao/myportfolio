@@ -22,7 +22,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery('(min-width: 768px)');
-  const navbarBackground = isTopOfPage ? 'bg-cream' : 'bg-pink';
+  const navbarBackground = isTopOfPage ? 'bg-cream' : 'bg-[#7FB8EC]';
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>

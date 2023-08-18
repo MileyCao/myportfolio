@@ -39,8 +39,8 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            className="z-10 w-full max-w-[280px] md:max-w-[600px]"
+            src={ProfileImage}
           />
         )}
       </div>
@@ -92,9 +92,9 @@ const Landing = ({ setSelectedPage }) => {
             className="font-Montserrat bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage('contact')}
-            href="#contact"
+            href="#work"
           >
-            Contact Me
+            About Me
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"

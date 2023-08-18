@@ -7,15 +7,37 @@ import ExperienceCard from './ExperienceCard';
 const WorkExperience = ({ setSelectedPage }) => {
   return (
     <section id="work">
+      <div className="md:flex md:justify-between md:gap-16 mt-32 ">
+        <motion.div
+          className="md:w-1/3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <h3 className="font-Montserrat font-semibold text-4xl mb-5 uppercase tracking-[20px]">
+            Experience
+          </h3>
+
+          <p className="mt-10 mb-7">
+            I'm a programmer by day, cocktail wizard by night, and proud
+            University of Alberta CS graduate. I skillfully weave together code
+            and cocktails with a dash of enthusiasm and a sprinkle of
+            open-mindedness. My passion lies in building innovative software
+            solutions and stirring up engaging conversations.
+          </p>
+        </motion.div>
+      </div>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
       >
-        <h3 className="absolute top-24 uppercase tracking-[20px] font-Montserrat text-2xl text-black-600">
-          Experience
-        </h3>
         <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#C95D63]/80">
           <article
             className="relative flex flex-col rounded-l items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#DCEBF9BA] hover:opacity-100 opacity-50
