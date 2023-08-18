@@ -24,11 +24,15 @@ const WorkExperience = ({ setSelectedPage }) => {
           </h3>
 
           <p className="mt-10 mb-7">
-            I'm a programmer by day, cocktail wizard by night, and proud
-            University of Alberta CS graduate. I skillfully weave together code
-            and cocktails with a dash of enthusiasm and a sprinkle of
-            open-mindedness. My passion lies in building innovative software
-            solutions and stirring up engaging conversations.
+            I'm a Computer Science grad from the University of Alberta. After
+            graduation, I dove into a year of front-end development, crafting
+            user-friendly interfaces and immersive web experiences. But life
+            took some fun turns: I steered a Shopify store dedicated to all
+            things snowboarding, and now, you can find me serving vibes (and
+            drinks) at Fu's Repair Shop. While I mix and mingle, my love for
+            coding always stays with me. So, in a nutshell? It's a mix of code,
+            commerce, and cocktails. Ready to bring my diverse toolkit wherever
+            the journey takes me!
           </p>
         </motion.div>
       </div>

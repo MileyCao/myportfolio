@@ -9,11 +9,11 @@ const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery('(min-width: 1060px)');
   const [text, count] = useTypewriter({
     words: [
-      'Hi, This is Miley',
-      'Programmer By Day',
-      'Bartender By Night',
-      'Power Up by Coffee',
-      'Cheer Up by Cocktail',
+      'Hi, This is Miley!',
+      '<A Software Dev/Eng By Day ☀️/>',
+      'A Bartender By Night 🌃',
+      'Power Up by Coffee ☕',
+      'Cheer Up by Cocktail 🥃',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -64,13 +64,11 @@ const Landing = ({ setSelectedPage }) => {
           </h2>
 
           <p className="font-Lora mt-10 mb-7 text-base text-center md:text-start">
-            Hey there, digital explorers!
+            Skillfully weaving together code and cocktails with a dash of
+            enthusiasm and a sprinkle of open-mindedness. The passion behind
+            these efforts is evident in the innovative software solutions
+            crafted and the engaging conversations stirred up.
             <br />
-            I'm a programmer by day, cocktail wizard by night, and proud
-            University of Alberta CS graduate. I skillfully weave together code
-            and cocktails with a dash of enthusiasm and a sprinkle of
-            open-mindedness. My passion lies in building innovative software
-            solutions and stirring up engaging conversations. <br />
             Let's mix it up and create some fun, exciting, and 'byte'-ful
             experiences together!
           </p>
