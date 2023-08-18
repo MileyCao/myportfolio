@@ -1,11 +1,23 @@
 import SocialMediaIcons from '../components/SocialMediaIcons';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ProfileImage from '../assets/avatar.png';
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery('(min-width: 1060px)');
+  const [text, count] = useTypewriter({
+    words: [
+      'Hi, This is Miley',
+      'Programmer By Day',
+      'Bartender By Night',
+      'Power Up by Coffee',
+      'Cheer Up by Cocktail',
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
   return (
     <section
       id="home"
@@ -46,15 +58,10 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl font-Montserrat font-semibold z-10 text-center md:text-start">
-            Yun(Miley) {''}
-            <span
-              className="xs:relative xs:font-bold z-20 xs:before:content-brush
-              before:absolute before:block before:-left-[50px] before:-top-[75px] before:z-[-1]"
-            >
-              Cao
-            </span>
-          </p>
+          <h2 className="text-4xl font-Montserrat font-semibold z-10 text-center md:text-start">
+            <span>{text}</span>
+            <Cursor cursorColor="#0F52BA" />
+          </h2>
 
           <p className="font-Lora mt-10 mb-7 text-base text-center md:text-start">
             Hey there, digital explorers!

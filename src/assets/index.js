@@ -24,11 +24,13 @@ import android from './android.png';
 import python from './python.png';
 import gcp from './google-cloud.png';
 import bq from './big-query.png';
+import docker from './docker.png';
 
 const images = {
   reactIcon,
   css3,
   html,
+  docker,
   typescript,
   javascript,
   nodejs,

@@ -31,41 +31,46 @@ const MySkills = () => {
             fames odio in at.
           </p>*/}
         </motion.div>
-
-        <div className="mt-16 md:mt-0">
-          {isAboveLarge ? (
-            <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
-            >
-              <img
-                alt="skills"
-                className="z-10 max-w-xs"
-                src={images.computer}
-              />
-            </div>
-          ) : (
-            <img alt="skills" className="z-10 max-w-xs" src={images.computer} />
-          )}
-        </div>
       </div>
       {/* Tech SKILLS */}
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5 mt-[32px]">
+        <Skill logoSrc={images.reactIcon} logoName={'React'} />
         <Skill logoSrc={images.javascript} logoName={'JavaScript'} />
         <Skill
           directionLeft={true}
           logoSrc={images.typescript}
           logoName={'TypeScript'}
         />
+        <Skill
+          directionLeft={true}
+          logoSrc={images.reduxIcon}
+          logoName={'Redux'}
+        />
+        <Skill
+          directionLeft={true}
+          logoSrc={images.python}
+          logoName={'Python'}
+        />
+        <Skill directionLeft={true} logoSrc={images.sass} logoName={'SASS'} />
         <Skill directionLeft={true} logoSrc={images.css3} logoName={'CSS3'} />
         <Skill directionLeft={true} logoSrc={images.html} logoName={'HTML'} />
-        <Skill logoSrc={images.reactIcon} logoName={'React + React Native'} />
+        <Skill logoSrc={images.reactIcon} logoName={'React Native'} />
         <Skill
           directionLeft={true}
           logoSrc={images.nodejs}
           logoName={'NodeJS'}
         />
         <Skill directionLeft={true} logoSrc={images.php} logoName={'PHP'} />
+        <Skill
+          directionLeft={true}
+          logoSrc={images.docker}
+          logoName={'Docker'}
+        />
+        <Skill
+          directionLeft={true}
+          logoSrc={images.android}
+          logoName={'Android Studio'}
+        />
         <Skill directionLeft={true} logoSrc={images.java} logoName={'Java'} />
       </div>
 
