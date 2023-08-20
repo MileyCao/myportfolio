@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-24 md:py-48">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -33,7 +33,7 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-2xl md:text-4xl">
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">

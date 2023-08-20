@@ -10,8 +10,8 @@ const Landing = ({ setSelectedPage }) => {
   const [text, count] = useTypewriter({
     words: [
       'Hi, This is Miley!',
-      '<A Software Dev/Eng By Day ☀️/>',
-      'A Bartender By Night 🌃',
+      '<A Programmer By Day/>',
+      'A Bartender By Night',
       'Power Up by Coffee ☕',
       'Cheer Up by Cocktail 🥃',
     ],
@@ -46,7 +46,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-3/5 mt-12 md:mt-32">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -58,12 +58,12 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <h2 className="text-4xl font-Montserrat font-semibold z-10 text-center md:text-start">
+          <h2 className="text-2xl md:text-4xl font-Montserrat font-semibold z-10 text-center md:text-start">
             <span>{text}</span>
             <Cursor cursorColor="#0F52BA" />
           </h2>
 
-          <p className="font-Lora mt-10 mb-7 text-base text-center md:text-start">
+          <p className="font-Lora mt-10 mb-7 leading-7 text-base text-center md:text-start">
             Skillfully weaving together code and cocktails with a dash of
             enthusiasm and a sprinkle of open-mindedness. The passion behind
             these efforts is evident in the innovative software solutions
