@@ -21,6 +21,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
+      name="home"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}

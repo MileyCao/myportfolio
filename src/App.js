@@ -13,20 +13,21 @@ import useMediaQuery from './hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState('home');
+  const [selectedPage, setSelectedPage] = useState('');
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery('(min-width: 1060px)');
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setSelectedPage('home');
+        setSelectedPage('');
       }
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      if (window.scrollY !== 0) {
+        setIsTopOfPage(false);
+        //setSelectedPage(selectedPage);
+      }
     };
     window.addEventListener('scroll', handleScroll);
-    //window.onwheel(handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

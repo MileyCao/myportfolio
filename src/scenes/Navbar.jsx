@@ -1,21 +1,30 @@
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { motion } from 'framer-motion';
 import useMediaQuery from '../hooks/useMediaQuery';
 import menuIcon from '../assets/hamburger.svg';
 import closeIcon from '../assets/close-icon.svg';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
-  const lowerCasePage = page.toLowerCase();
+  const pageId = page.toLowerCase();
   return (
-    <AnchorLink
+    <a
       className={`${
-        selectedPage === lowerCasePage ? 'text-dark-blue' : ''
-      } hover:text-pink transition duration-500`}
-      href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+        selectedPage === pageId ? 'text-dark-blue' : ''
+      }  hover:pink/60 relative rounded-full px-3 py-1.5 transition focus-visible:outline-2 duration-500`}
+      href={`#${pageId}`}
+      onClick={() => setSelectedPage(pageId)}
     >
+      {selectedPage === pageId && (
+        <motion.span
+          layoutId="bubble"
+          className="absolute inset-0 z-10 bg-white mix-blend-difference"
+          style={{ borderRadius: 9999 }}
+          transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+        />
+      )}
       {page}
-    </AnchorLink>
+    </a>
   );
 };
 
@@ -37,11 +46,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+
             <Link
               page="Work"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+
             <Link
               page="Skills"
               selectedPage={selectedPage}

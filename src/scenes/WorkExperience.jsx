@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion';
-import ReactFullpage from '@fullpage/react-fullpage';
 import images from '../assets';
-import ExperienceCard from './ExperienceCard';
 
 const WorkExperience = ({ setSelectedPage }) => {
   const cardStyle = `relative flex flex-col rounded-l items-center space-y-7 flex-shrink-0 w-full box-border md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#DCEBF9BA] hover:opacity-100 opacity-50
   cursor-pointer transition-opacity duration-200 overflow-hidden`;
 
   return (
-    <section id="work">
+    <section id="work" name="work">
       <div className="md:flex md:justify-between md:gap-16 mt-32 ">
         <motion.div
           className="md:w-9/10"
